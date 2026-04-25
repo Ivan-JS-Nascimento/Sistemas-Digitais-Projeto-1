@@ -1,0 +1,218 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projetoSD/simulation/qsim
+vcomplementa2
+Z1 !s110 1777079098
+!i10b 1
+!s100 WJmmB<DVHRG9IZR]B38G23
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I94KA0CSCJZIY^f5<V[ckC0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1777079097
+Z5 8SDprojeto.vo
+Z6 FSDprojeto.vo
+!i122 10
+L0 32 312
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1777079098.000000
+Z9 !s107 SDprojeto.vo|
+Z10 !s90 -work|work|SDprojeto.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vcomplementa2_vlg_vec_tst
+R1
+!i10b 1
+!s100 b]eNzUQEbI`@7KZEC^4gn3
+R2
+I2m1ODQFgMcB5k<J2@6iWz3
+R3
+R0
+R4
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+!i122 11
+L0 30 99
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+Z17 !s110 1777131907
+!i10b 1
+!s100 ;P;E8Pb8SY<0eG58=z80b1
+R2
+ICzbEUl5DG^Al1Y:mOoYOb1
+R3
+R0
+Z18 w1777131906
+R5
+R6
+!i122 26
+L0 922 34
+R7
+r1
+!s85 0
+31
+Z19 !s108 1777131907.000000
+R9
+R10
+!i113 1
+R11
+R12
+vsoma
+Z20 !s110 1777060481
+!i10b 1
+!s100 <_^LVCJ=Nhm]I>DGOF7Xn1
+R2
+Ijh<H=2iZ2CYZfI<6ba2J;1
+R3
+R0
+w1777060477
+R5
+R6
+!i122 0
+L0 32 140
+R7
+r1
+!s85 0
+31
+Z21 !s108 1777060481.000000
+R9
+R10
+!i113 1
+R11
+R12
+vsoma_vlg_vec_tst
+R20
+!i10b 1
+!s100 WzP]oa0dWI6Rb_GLUUHIR0
+R2
+IcQO@?:C8^_l;b2mV:jE:d0
+R3
+R0
+w1777060476
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 1
+L0 30 53
+R7
+r1
+!s85 0
+31
+R21
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12
+vsomador
+R17
+!i10b 1
+!s100 4BjZdX765b=H]e1IXdX]30
+R2
+I6[kR9[aVkUMb=fd6LFGE62
+R3
+R0
+R18
+R5
+R6
+!i122 26
+L0 32 889
+R7
+r1
+!s85 0
+31
+R19
+R9
+R10
+!i113 1
+R11
+R12
+vsomador_vlg_vec_tst
+R17
+!i10b 1
+!s100 dR90nLFa<L>S:5o^;CSf^1
+R2
+Iz0a`0Y:cU?T1WS@<N5:IL1
+R3
+R0
+R18
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 27
+L0 30 159
+R7
+r1
+!s85 0
+31
+R19
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+vsubtrator
+Z22 !s110 1777078628
+!i10b 1
+!s100 S6gW6OQBJ]P?Dk^3NMH_X2
+R2
+Ikm7;SXkShHgn^jD261oQE1
+R3
+R0
+Z23 w1777078627
+R5
+R6
+!i122 4
+L0 32 838
+R7
+r1
+!s85 0
+31
+Z24 !s108 1777078628.000000
+R9
+R10
+!i113 1
+R11
+R12
+vsubtrator_vlg_vec_tst
+R22
+!i10b 1
+!s100 _7QZ<Hh1YY]5EgkVOHJ[91
+R2
+I6ekaW;cjLS[h7m>K]ee7o0
+R3
+R0
+R23
+R13
+R14
+!i122 5
+L0 30 112
+R7
+r1
+!s85 0
+31
+R24
+R15
+R16
+!i113 1
+R11
+R12

@@ -1,24 +1,4 @@
-|somador
-F0 <= complementa2:inst9.F0
-A0 => complementa2:inst.A0
-A1 => complementa2:inst.A1
-A2 => complementa2:inst.A2
-A3 => complementa2:inst.A3
-SA => complementa2:inst.SA
-B0 => complementa2:inst1.A0
-B1 => complementa2:inst1.A1
-B2 => complementa2:inst1.A2
-B3 => complementa2:inst1.A3
-SB => inst12.IN0
-SLECT => inst12.IN1
-F1 <= complementa2:inst9.F1
-F2 <= complementa2:inst9.F2
-F3 <= complementa2:inst9.F3
-F4 <= complementa2:inst9.F4
-SF <= complementa2:inst9.SF
-
-
-|somador|complementa2:inst9
+|complementa2
 F0 <= soma:inst.S
 A0 => inst12.IN0
 SA => inst12.IN1
@@ -39,7 +19,7 @@ A4 => inst16.IN0
 SF <= SA.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador|complementa2:inst9|soma:inst
+|complementa2|soma:inst
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN1
@@ -53,7 +33,7 @@ Cin => inst3.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador|complementa2:inst9|soma:inst1
+|complementa2|soma:inst1
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN1
@@ -67,7 +47,7 @@ Cin => inst3.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador|complementa2:inst9|soma:inst2
+|complementa2|soma:inst2
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN1
@@ -81,7 +61,7 @@ Cin => inst3.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador|complementa2:inst9|soma:inst3
+|complementa2|soma:inst3
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN1
@@ -95,273 +75,7 @@ Cin => inst3.IN0
 Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|somador|complementa2:inst9|soma:inst4
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst3
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst
-F0 <= soma:inst.S
-A0 => inst12.IN0
-SA => inst12.IN1
-SA => soma:inst.Cin
-SA => inst13.IN1
-SA => inst14.IN1
-SA => inst15.IN1
-SA => inst16.IN1
-SA => SF.DATAIN
-F1 <= soma:inst1.S
-A1 => inst13.IN0
-F2 <= soma:inst2.S
-A2 => inst14.IN0
-F3 <= soma:inst3.S
-A3 => inst15.IN0
-F4 <= soma:inst4.S
-A4 => inst16.IN0
-SF <= SA.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst|soma:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst|soma:inst1
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst|soma:inst2
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst|soma:inst3
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst|soma:inst4
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1
-F0 <= soma:inst.S
-A0 => inst12.IN0
-SA => inst12.IN1
-SA => soma:inst.Cin
-SA => inst13.IN1
-SA => inst14.IN1
-SA => inst15.IN1
-SA => inst16.IN1
-SA => SF.DATAIN
-F1 <= soma:inst1.S
-A1 => inst13.IN0
-F2 <= soma:inst2.S
-A2 => inst14.IN0
-F3 <= soma:inst3.S
-A3 => inst15.IN0
-F4 <= soma:inst4.S
-A4 => inst16.IN0
-SF <= SA.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1|soma:inst
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1|soma:inst1
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1|soma:inst2
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1|soma:inst3
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|complementa2:inst1|soma:inst4
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst4
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst5
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst6
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst7
-S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A => inst.IN0
-A => inst4.IN1
-A => inst5.IN1
-B => inst.IN1
-B => inst5.IN0
-B => inst3.IN1
-Cin => inst1.IN1
-Cin => inst4.IN0
-Cin => inst3.IN0
-Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|somador|soma:inst8
+|complementa2|soma:inst4
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 A => inst.IN0
 A => inst4.IN1

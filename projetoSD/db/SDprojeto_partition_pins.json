@@ -32,27 +32,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "B0",
-					"strict" : false
-				},
-				{
-					"name" : "SB",
-					"strict" : false
-				},
-				{
-					"name" : "SLECT",
-					"strict" : false
-				},
-				{
-					"name" : "B3",
-					"strict" : false
-				},
-				{
-					"name" : "B2",
-					"strict" : false
-				},
-				{
-					"name" : "B1",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
@@ -60,15 +40,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "A3",
-					"strict" : false
-				},
-				{
 					"name" : "A2",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A4",
 					"strict" : false
 				}
 			]

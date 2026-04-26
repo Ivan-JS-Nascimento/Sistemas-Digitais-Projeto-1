@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Apr 25 17:02:05 2026
+Analysis & Synthesis Status : Successful - Sun Apr 26 00:36:42 2026
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : SDprojeto
-Top-level Entity Name : complementa2
+Top-level Entity Name : somador
 Family : Cyclone IV E
-Total logic elements : 5
-    Total combinational functions : 5
+Total logic elements : 35
+    Total combinational functions : 35
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 12
+Total pins : 17
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

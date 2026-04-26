@@ -1,12 +1,12 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SDprojeto -c SDprojeto --vector_source="C:/projetoSD/Waveform1.vwf" --testbench_file="C:/projetoSD/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SDprojeto -c SDprojeto --vector_source="C:/projetoSD/Waveform1.vwf" --testbench_file="C:/projetoSD/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/projetoSD/simulation/qsim/" SDprojeto -c SDprojeto</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/projetoSD/simulation/qsim/" SDprojeto -c SDprojeto</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SDprojeto -c SDprojeto --vector_source="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/Waveform4.vwf" --testbench_file="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/simulation/qsim/Waveform4.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off SDprojeto -c SDprojeto --vector_source="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/Waveform4.vwf" --testbench_file="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/simulation/qsim/Waveform4.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/simulation/qsim/" SDprojeto -c SDprojeto</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/simulation/qsim/" SDprojeto -c SDprojeto</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work SDprojeto.vo
-vlog -work work Waveform1.vwf.vt
+vlog -work work Waveform4.vwf.vt
 vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_vlg_vec_tst
 vcd file -direction SDprojeto.msim.vcd
 vcd add -internal somador_vlg_vec_tst/*
@@ -24,11 +24,13 @@ quit -f
 
 
 
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work SDprojeto.vo
-vlog -work work Waveform1.vwf.vt
+vlog -work work Waveform4.vwf.vt
 vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_vlg_vec_tst
 vcd file -direction SDprojeto.msim.vcd
 vcd add -internal somador_vlg_vec_tst/*
@@ -42,6 +44,8 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
 
 
 
@@ -254,11 +258,6 @@ SIGNAL("SLECT")
 	PARENT = "";
 }
 
-GROUP("F")
-{
-	MEMBERS = "SF", "F4", "F3", "F2", "F1", "F0";
-}
-
 GROUP("A")
 {
 	MEMBERS = "SA", "A3", "A2", "A1", "A0";
@@ -267,6 +266,11 @@ GROUP("A")
 GROUP("B")
 {
 	MEMBERS = "SB", "B3", "B2", "B1", "B0";
+}
+
+GROUP("F")
+{
+	MEMBERS = "SF", "F4", "F3", "F2", "F1", "F0";
 }
 
 TRANSITION_LIST("A0")
@@ -334,10 +338,12 @@ TRANSITION_LIST("B0")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 25;
-			LEVEL 0 FOR 20.0;
-			LEVEL 1 FOR 20.0;
+			REPEAT = 16;
+			LEVEL 0 FOR 30.0;
+			LEVEL 1 FOR 30.0;
 		}
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
 	}
 }
 
@@ -348,9 +354,9 @@ TRANSITION_LIST("B1")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 12;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
+			REPEAT = 8;
+			LEVEL 0 FOR 60.0;
+			LEVEL 1 FOR 60.0;
 		}
 		LEVEL 0 FOR 40.0;
 	}
@@ -363,9 +369,9 @@ TRANSITION_LIST("B2")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 6;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
+			REPEAT = 4;
+			LEVEL 0 FOR 120.0;
+			LEVEL 1 FOR 120.0;
 		}
 		LEVEL 0 FOR 40.0;
 	}
@@ -378,9 +384,9 @@ TRANSITION_LIST("B3")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 3;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 240.0;
+			LEVEL 1 FOR 240.0;
 		}
 		LEVEL 0 FOR 40.0;
 	}
@@ -454,11 +460,10 @@ TRANSITION_LIST("SB")
 		NODE
 		{
 			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
+			LEVEL 0 FOR 480.0;
+			LEVEL 1 FOR 480.0;
 		}
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
 	}
 }
 
@@ -482,21 +487,12 @@ TRANSITION_LIST("SLECT")
 
 DISPLAY_LINE
 {
-	CHANNEL = "SLECT";
+	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "A";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 1;
-	TREE_LEVEL = 0;
-	CHILDREN = 2, 3, 4, 5, 6;
+	CHILDREN = 1, 2, 3, 4, 5;
 }
 
 DISPLAY_LINE
@@ -504,9 +500,9 @@ DISPLAY_LINE
 	CHANNEL = "SA";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 2;
+	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -514,9 +510,9 @@ DISPLAY_LINE
 	CHANNEL = "A3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 3;
+	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -524,9 +520,9 @@ DISPLAY_LINE
 	CHANNEL = "A2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 4;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -534,9 +530,9 @@ DISPLAY_LINE
 	CHANNEL = "A1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 5;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -544,9 +540,9 @@ DISPLAY_LINE
 	CHANNEL = "A0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 6;
+	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 1;
+	PARENT = 0;
 }
 
 DISPLAY_LINE
@@ -554,9 +550,9 @@ DISPLAY_LINE
 	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 7;
+	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
-	CHILDREN = 8, 9, 10, 11, 12;
+	CHILDREN = 7, 8, 9, 10, 11;
 }
 
 DISPLAY_LINE
@@ -564,9 +560,9 @@ DISPLAY_LINE
 	CHANNEL = "SB";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 8;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -574,9 +570,9 @@ DISPLAY_LINE
 	CHANNEL = "B3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 9;
+	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -584,9 +580,9 @@ DISPLAY_LINE
 	CHANNEL = "B2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 10;
+	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -594,9 +590,9 @@ DISPLAY_LINE
 	CHANNEL = "B1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 11;
+	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
@@ -604,9 +600,18 @@ DISPLAY_LINE
 	CHANNEL = "B0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 12;
+	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 7;
+	PARENT = 6;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "SLECT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE

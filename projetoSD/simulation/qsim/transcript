@@ -1,34 +1,34 @@
 # do SDprojeto.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:05:33 on Apr 25,2026
+# Start time: 00:43:55 on Apr 26,2026
 # vlog -work work SDprojeto.vo 
-# -- Compiling module complementa2
+# -- Compiling module somador
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	complementa2
-# End time: 17:05:33 on Apr 25,2026, Elapsed time: 0:00:00
+# 	somador
+# End time: 00:43:55 on Apr 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:05:33 on Apr 25,2026
-# vlog -work work Waveform2.vwf.vt 
-# -- Compiling module complementa2_vlg_vec_tst
+# Start time: 00:43:55 on Apr 26,2026
+# vlog -work work Waveform4.vwf.vt 
+# -- Compiling module somador_vlg_vec_tst
 # 
 # Top level modules:
-# 	complementa2_vlg_vec_tst
-# End time: 17:05:33 on Apr 25,2026, Elapsed time: 0:00:00
+# 	somador_vlg_vec_tst
+# End time: 00:43:55 on Apr 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.complementa2_vlg_vec_tst 
-# Start time: 17:05:33 on Apr 25,2026
-# Loading work.complementa2_vlg_vec_tst
-# Loading work.complementa2
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.somador_vlg_vec_tst 
+# Start time: 00:43:55 on Apr 26,2026
+# Loading work.somador_vlg_vec_tst
+# Loading work.somador
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#26
-# ** Note: $finish    : Waveform2.vwf.vt(65)
-#    Time: 1 us  Iteration: 0  Instance: /complementa2_vlg_vec_tst
-# End time: 17:05:34 on Apr 25,2026, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform4.vwf.vt(75)
+#    Time: 1 us  Iteration: 0  Instance: /somador_vlg_vec_tst
+# End time: 00:43:55 on Apr 26,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

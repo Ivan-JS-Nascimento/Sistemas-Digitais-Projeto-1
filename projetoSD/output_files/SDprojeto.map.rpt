@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SDprojeto
-Sat Apr 25 17:02:05 2026
+Sun Apr 26 00:36:42 2026
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 25 17:02:05 2026       ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 26 00:36:42 2026       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; SDprojeto                                   ;
-; Top-level Entity Name              ; complementa2                                ;
+; Top-level Entity Name              ; somador                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5                                           ;
-;     Total combinational functions  ; 5                                           ;
+; Total logic elements               ; 35                                          ;
+;     Total combinational functions  ; 35                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 12                                          ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; complementa2       ; SDprojeto          ;
+; Top-level entity name                                            ; somador            ; SDprojeto          ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -168,6 +168,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
 ; soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/soma.bdf         ;         ;
 ; complementa2.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/complementa2.bdf ;         ;
+; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/somador.bdf      ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
@@ -176,44 +177,60 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 5        ;
+; Estimated Total logic elements              ; 35       ;
 ;                                             ;          ;
-; Total combinational functions               ; 5        ;
+; Total combinational functions               ; 35       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 3        ;
+;     -- 4 input functions                    ; 27       ;
 ;     -- 3 input functions                    ; 2        ;
-;     -- <=2 input functions                  ; 0        ;
+;     -- <=2 input functions                  ; 6        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 5        ;
+;     -- normal mode                          ; 35       ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
 ; Total registers                             ; 0        ;
 ;     -- Dedicated logic registers            ; 0        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 12       ;
+; I/O pins                                    ; 17       ;
 ;                                             ;          ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ;                                             ;          ;
-; Maximum fan-out node                        ; SA~input ;
-; Maximum fan-out                             ; 6        ;
-; Total fan-out                               ; 36       ;
-; Average fan-out                             ; 1.24     ;
+; Maximum fan-out node                        ; A0~input ;
+; Maximum fan-out                             ; 8        ;
+; Total fan-out                               ; 149      ;
+; Average fan-out                             ; 2.16     ;
 +---------------------------------------------+----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+--------------+
-; |complementa2              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |complementa2            ; complementa2 ; work         ;
-;    |soma:inst1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complementa2|soma:inst1 ; soma         ; work         ;
-;    |soma:inst2|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complementa2|soma:inst2 ; soma         ; work         ;
-;    |soma:inst3|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complementa2|soma:inst3 ; soma         ; work         ;
-;    |soma:inst4|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complementa2|soma:inst4 ; soma         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
+; |somador                   ; 35 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |somador                               ; somador      ; work         ;
+;    |complementa2:inst1|    ; 6 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1            ; complementa2 ; work         ;
+;       |soma:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst1 ; soma         ; work         ;
+;       |soma:inst2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst2 ; soma         ; work         ;
+;       |soma:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst  ; soma         ; work         ;
+;    |complementa2:inst9|    ; 12 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9            ; complementa2 ; work         ;
+;       |soma:inst1|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst1 ; soma         ; work         ;
+;       |soma:inst2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst2 ; soma         ; work         ;
+;       |soma:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst3 ; soma         ; work         ;
+;       |soma:inst4|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst4 ; soma         ; work         ;
+;    |complementa2:inst|     ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst             ; complementa2 ; work         ;
+;       |soma:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst1  ; soma         ; work         ;
+;       |soma:inst2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst2  ; soma         ; work         ;
+;       |soma:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst3  ; soma         ; work         ;
+;       |soma:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst   ; soma         ; work         ;
+;    |soma:inst3|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst3                    ; soma         ; work         ;
+;    |soma:inst4|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst4                    ; soma         ; work         ;
+;    |soma:inst5|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst5                    ; soma         ; work         ;
+;    |soma:inst6|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst6                    ; soma         ; work         ;
+;    |soma:inst7|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst7                    ; soma         ; work         ;
+;    |soma:inst8|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst8                    ; soma         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,15 +254,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_lcell_comb ; 7                           ;
-;     normal            ; 7                           ;
+; boundary_port         ; 17                          ;
+; cycloneiii_lcell_comb ; 37                          ;
+;     normal            ; 37                          ;
 ;         1 data inputs ; 2                           ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 2                           ;
-;         4 data inputs ; 3                           ;
+;         4 data inputs ; 27                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.38                        ;
+; Max LUT depth         ; 11.00                       ;
+; Average LUT depth     ; 10.35                       ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +282,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 25 17:01:55 2026
+    Info: Processing started: Sun Apr 26 00:36:33 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SDprojeto -c SDprojeto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -276,27 +294,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file somador
     Info (12023): Found entity 1: somador
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_completo.bdf
     Info (12023): Found entity 1: circuito_completo
-Info (12021): Found 1 design units, including 1 entities, in source file comparador.bdf
-    Info (12023): Found entity 1: comparador
 Info (12021): Found 1 design units, including 1 entities, in source file comparador_sinal.bdf
     Info (12023): Found entity 1: comparador_sinal
 Info (12021): Found 1 design units, including 1 entities, in source file comp_bit_cascata.bdf
     Info (12023): Found entity 1: comp_bit_cascata
 Info (12021): Found 1 design units, including 1 entities, in source file comparadores_ula.bdf
     Info (12023): Found entity 1: comparadores_ULA
-Info (12127): Elaborating entity "complementa2" for the top level hierarchy
-Info (12128): Elaborating entity "soma" for hierarchy "soma:inst"
+Info (12127): Elaborating entity "somador" for the top level hierarchy
+Info (12128): Elaborating entity "complementa2" for hierarchy "complementa2:inst9"
+Info (12128): Elaborating entity "soma" for hierarchy "complementa2:inst9|soma:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 5 logic cells
+    Info (21061): Implemented 35 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Sat Apr 25 17:02:05 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Processing ended: Sun Apr 26 00:36:42 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 

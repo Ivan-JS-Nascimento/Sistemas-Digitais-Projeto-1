@@ -19,113 +19,65 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/25/2026 12:07:34"
+// Generated on "04/25/2026 16:26:14"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          somador
+// Verilog Test Bench (with test vectors) for design :                          soma
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module somador_vlg_vec_tst();
+module soma_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg A0;
-reg A1;
-reg A2;
-reg A3;
-reg B0;
-reg B1;
-reg B2;
-reg B3;
-reg SA;
-reg SB;
-reg SLECT;
+reg A;
+reg B;
+reg Cin;
 // wires                                               
-wire F0;
-wire F1;
-wire F2;
-wire F3;
-wire F4;
-wire SF;
+wire Cout;
+wire S;
 
 // assign statements (if any)                          
-somador i1 (
+soma i1 (
 // port map - connection between master ports and signals/registers   
-	.A0(A0),
-	.A1(A1),
-	.A2(A2),
-	.A3(A3),
-	.B0(B0),
-	.B1(B1),
-	.B2(B2),
-	.B3(B3),
-	.F0(F0),
-	.F1(F1),
-	.F2(F2),
-	.F3(F3),
-	.F4(F4),
-	.SA(SA),
-	.SB(SB),
-	.SF(SF),
-	.SLECT(SLECT)
+	.A(A),
+	.B(B),
+	.Cin(Cin),
+	.Cout(Cout),
+	.S(S)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// A0
+// A
 always
 begin
-	A0 = 1'b0;
-	A0 = #2000 1'b1;
-	#2000;
+	A = 1'b0;
+	A = #10000 1'b1;
+	#10000;
 end 
 
-// A1
+// B
 always
 begin
-	A1 = 1'b0;
-	A1 = #4000 1'b1;
-	#4000;
+	B = 1'b0;
+	B = #20000 1'b1;
+	#20000;
 end 
 
-// A2
+// Cin
 initial
 begin
-	repeat(83)
+	repeat(16)
 	begin
-		A2 = 1'b0;
-		A2 = #6000 1'b1;
-		# 6000;
+		Cin = 1'b0;
+		Cin = #30000 1'b1;
+		# 30000;
 	end
-	A2 = 1'b0;
-end 
-
-// A3
-initial
-begin
-	repeat(62)
-	begin
-		A3 = 1'b0;
-		A3 = #8000 1'b1;
-		# 8000;
-	end
-	A3 = 1'b0;
-end 
-
-// SA
-initial
-begin
-	repeat(41)
-	begin
-		SA = 1'b0;
-		SA = #12000 1'b1;
-		# 12000;
-	end
-	SA = 1'b0;
-	SA = #12000 1'b1;
+	Cin = 1'b0;
+	Cin = #30000 1'b1;
 end 
 endmodule
 

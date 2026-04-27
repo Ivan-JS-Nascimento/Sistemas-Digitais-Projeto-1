@@ -19,28 +19,23 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/25/2026 12:06:59"
+// Generated on "04/25/2026 17:05:32"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          somador
+// Verilog Test Bench (with test vectors) for design :                          complementa2
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module somador_vlg_vec_tst();
+module complementa2_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg A0;
 reg A1;
 reg A2;
 reg A3;
-reg B0;
-reg B1;
-reg B2;
-reg B3;
+reg A4;
 reg SA;
-reg SB;
-reg SLECT;
 // wires                                               
 wire F0;
 wire F1;
@@ -50,29 +45,85 @@ wire F4;
 wire SF;
 
 // assign statements (if any)                          
-somador i1 (
+complementa2 i1 (
 // port map - connection between master ports and signals/registers   
 	.A0(A0),
 	.A1(A1),
 	.A2(A2),
 	.A3(A3),
-	.B0(B0),
-	.B1(B1),
-	.B2(B2),
-	.B3(B3),
+	.A4(A4),
 	.F0(F0),
 	.F1(F1),
 	.F2(F2),
 	.F3(F3),
 	.F4(F4),
 	.SA(SA),
-	.SB(SB),
-	.SF(SF),
-	.SLECT(SLECT)
+	.SF(SF)
 );
 initial 
 begin 
 #1000000 $finish;
+end 
+
+// SA
+initial
+begin
+	SA = 1'b0;
+	SA = #320000 1'b1;
+	SA = #320000 1'b0;
+	SA = #320000 1'b1;
+end 
+
+// A4
+initial
+begin
+	repeat(3)
+	begin
+		A4 = 1'b0;
+		A4 = #160000 1'b1;
+		# 160000;
+	end
+	A4 = 1'b0;
+end 
+
+// A3
+initial
+begin
+	repeat(6)
+	begin
+		A3 = 1'b0;
+		A3 = #80000 1'b1;
+		# 80000;
+	end
+	A3 = 1'b0;
+end 
+
+// A2
+initial
+begin
+	repeat(12)
+	begin
+		A2 = 1'b0;
+		A2 = #40000 1'b1;
+		# 40000;
+	end
+	A2 = 1'b0;
+end 
+
+// A1
+always
+begin
+	A1 = 1'b0;
+	A1 = #20000 1'b1;
+	#20000;
+end 
+
+// A0
+always
+begin
+	A0 = 1'b0;
+	A0 = #10000 1'b1;
+	#10000;
 end 
 endmodule
 

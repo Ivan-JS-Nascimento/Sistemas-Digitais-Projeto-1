@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Apr 25 12:54:19 2026
-Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Fitter Status : Successful - Mon Apr 27 06:13:45 2026
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : SDprojeto
 Top-level Entity Name : somador
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 33 / 6,272 ( < 1 % )
-    Total combinational functions : 33 / 6,272 ( < 1 % )
+Total logic elements : 35 / 6,272 ( < 1 % )
+    Total combinational functions : 35 / 6,272 ( < 1 % )
     Dedicated logic registers : 0 / 6,272 ( 0 % )
 Total registers : 0
 Total pins : 17 / 92 ( 18 % )

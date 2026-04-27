@@ -1,6 +1,6 @@
 Analysis & Synthesis report for SDprojeto
-Sat Apr 25 12:54:14 2026
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Mon Apr 27 06:39:35 2026
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -10,20 +10,14 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 25 12:54:14 2026       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Failed - Mon Apr 27 06:39:35 2026           ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; SDprojeto                                   ;
-; Top-level Entity Name              ; somador                                     ;
+; Top-level Entity Name              ; Decodificador                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 33                                          ;
-;     Total combinational functions  ; 33                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 17                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; somador            ; SDprojeto          ;
+; Top-level entity name                                            ; Decodificador      ; SDprojeto          ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -150,8 +144,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -161,132 +155,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-; soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/soma.bdf         ;         ;
-; complementa2.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/complementa2.bdf ;         ;
-; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/somador.bdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 33       ;
-;                                             ;          ;
-; Total combinational functions               ; 33       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 18       ;
-;     -- 3 input functions                    ; 11       ;
-;     -- <=2 input functions                  ; 4        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 33       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-;     -- Dedicated logic registers            ; 0        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 17       ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; SA~input ;
-; Maximum fan-out                             ; 9        ;
-; Total fan-out                               ; 136      ;
-; Average fan-out                             ; 2.03     ;
-+---------------------------------------------+----------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
-; |somador                   ; 33 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |somador                               ; somador      ; work         ;
-;    |complementa2:inst1|    ; 7 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1            ; complementa2 ; work         ;
-;       |soma:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst1 ; soma         ; work         ;
-;       |soma:inst2|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst2 ; soma         ; work         ;
-;       |soma:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst3 ; soma         ; work         ;
-;       |soma:inst|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst1|soma:inst  ; soma         ; work         ;
-;    |complementa2:inst9|    ; 14 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9            ; complementa2 ; work         ;
-;       |soma:inst1|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst1 ; soma         ; work         ;
-;       |soma:inst2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst2 ; soma         ; work         ;
-;       |soma:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst3 ; soma         ; work         ;
-;       |soma:inst4|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst9|soma:inst4 ; soma         ; work         ;
-;    |complementa2:inst|     ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst             ; complementa2 ; work         ;
-;       |soma:inst1|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst1  ; soma         ; work         ;
-;       |soma:inst2|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst2  ; soma         ; work         ;
-;       |soma:inst3|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst3  ; soma         ; work         ;
-;       |soma:inst4|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|complementa2:inst|soma:inst4  ; soma         ; work         ;
-;    |soma:inst3|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst3                    ; soma         ; work         ;
-;    |soma:inst4|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst4                    ; soma         ; work         ;
-;    |soma:inst5|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst5                    ; soma         ; work         ;
-;    |soma:inst6|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst6                    ; soma         ; work         ;
-;    |soma:inst7|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst7                    ; soma         ; work         ;
-;    |soma:inst8|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |somador|soma:inst8                    ; soma         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 17                          ;
-; cycloneiii_lcell_comb ; 35                          ;
-;     normal            ; 35                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 18                          ;
-;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 8.91                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Apr 25 12:54:04 2026
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Mon Apr 27 06:39:28 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SDprojeto -c SDprojeto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file soma.bdf
     Info (12023): Found entity 1: soma
 Info (12021): Found 1 design units, including 1 entities, in source file complementa2.bdf
@@ -295,22 +173,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file somador
     Info (12023): Found entity 1: somador
 Info (12021): Found 1 design units, including 1 entities, in source file circuito_completo.bdf
     Info (12023): Found entity 1: circuito_completo
-Info (12021): Found 1 design units, including 1 entities, in source file comparador.bdf
-    Info (12023): Found entity 1: comparador
-Info (12127): Elaborating entity "somador" for the top level hierarchy
-Info (12128): Elaborating entity "complementa2" for hierarchy "complementa2:inst9"
-Info (12128): Elaborating entity "soma" for hierarchy "complementa2:inst9|soma:inst"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 33 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Sat Apr 25 12:54:14 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+Info (12021): Found 1 design units, including 1 entities, in source file comparador_sinal.bdf
+    Info (12023): Found entity 1: comparador_sinal
+Info (12021): Found 1 design units, including 1 entities, in source file comp_bit_cascata.bdf
+    Info (12023): Found entity 1: comp_bit_cascata
+Info (12021): Found 1 design units, including 1 entities, in source file comparadores_ula.bdf
+    Info (12023): Found entity 1: comparadores_ULA
+Info (12021): Found 1 design units, including 1 entities, in source file decodificador.bdf
+    Info (12023): Found entity 1: Decodificador
+Info (12127): Elaborating entity "Decodificador" for the top level hierarchy
+Warning (275011): Block or symbol "NOT" of instance "inst5" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst7" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst9" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst11" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst12" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst16" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst18" overlaps another block or symbol
+Error (12006): Node instance "inst2" instantiates undefined entity "decoder_7seg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
+Error (12006): Node instance "inst" instantiates undefined entity "conversor". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
+Error (12006): Node instance "inst3" instantiates undefined entity "decoder_7seg". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 9 warnings
+    Error: Peak virtual memory: 4736 megabytes
+    Error: Processing ended: Mon Apr 27 06:39:35 2026
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:18
 
 

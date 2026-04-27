@@ -1,21 +1,29 @@
 |somador
 F0 <= complementa2:inst9.F0
 A0 => complementa2:inst.A0
+A0 => inst19.IN2
 A1 => complementa2:inst.A1
+A1 => inst19.IN1
 A2 => complementa2:inst.A2
+A2 => inst19.IN3
 A3 => complementa2:inst.A3
-SA => complementa2:inst.SA
+A3 => inst19.IN0
+SA => inst18.IN0
 B0 => complementa2:inst1.A0
+B0 => inst15.IN2
 B1 => complementa2:inst1.A1
+B1 => inst15.IN1
 B2 => complementa2:inst1.A2
+B2 => inst15.IN3
 B3 => complementa2:inst1.A3
+B3 => inst15.IN0
 SB => inst12.IN0
 SLECT => inst12.IN1
 F1 <= complementa2:inst9.F1
 F2 <= complementa2:inst9.F2
 F3 <= complementa2:inst9.F3
 F4 <= complementa2:inst9.F4
-SF <= complementa2:inst9.SF
+SF <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |somador|complementa2:inst9

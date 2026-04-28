@@ -1,5 +1,5 @@
 Flow report for SDprojeto
-Tue Apr 28 14:10:53 2026
+Tue Apr 28 16:27:01 2026
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 28 14:10:53 2026       ;
+; Flow Status                        ; Successful - Tue Apr 28 16:27:01 2026       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; SDprojeto                                   ;
 ; Top-level Entity Name              ; circuito_completo                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 87 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 87 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 104 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 104 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 45 / 529 ( 9 % )                            ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/28/2026 14:10:32 ;
+; Start date & time ; 04/28/2026 16:26:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SDprojeto           ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 238368719731813.177739623113496        ; --            ; --                ; --             ;
+; COMPILER_SIGNATURE_ID               ; 238368719731813.177740440009948        ; --            ; --                ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --                ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --                ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --                ; eda_simulation ;
@@ -96,11 +96,11 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4810 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 6861 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 6861 MB             ; 00:00:14                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 5008 MB             ; 00:00:02                           ;
 ; Timing Analyzer      ; 00:00:01     ; 1.1                     ; 5016 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4686 MB             ; 00:00:00                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:36                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

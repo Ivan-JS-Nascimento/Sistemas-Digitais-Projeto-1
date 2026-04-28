@@ -2,49 +2,49 @@
 dez_b <= Decodificador:inst14.dez_b
 A0 => somador:inst.A0
 A0 => comparadores_ULA:inst13.A0
-A0 => blocos_logicos:inst6.A0
 A0 => led_A0.DATAIN
+A0 => blocos_logicos:inst6.A0
 A1 => somador:inst.A1
 A1 => comparadores_ULA:inst13.A1
-A1 => blocos_logicos:inst6.A1
 A1 => led_A1.DATAIN
+A1 => blocos_logicos:inst6.A1
 A2 => somador:inst.A2
 A2 => comparadores_ULA:inst13.A2
-A2 => blocos_logicos:inst6.A2
 A2 => led_A2.DATAIN
+A2 => blocos_logicos:inst6.A2
 A3 => somador:inst.A3
 A3 => comparadores_ULA:inst13.A3
-A3 => blocos_logicos:inst6.A3
 A3 => led_A3.DATAIN
+A3 => blocos_logicos:inst6.A3
 SA => somador:inst.SA
 SA => comparadores_ULA:inst13.A4
-SA => blocos_logicos:inst6.SA
 SA => led_SA.DATAIN
+SA => blocos_logicos:inst6.SA
 B0 => somador:inst.B0
 B0 => comparadores_ULA:inst13.B0
+B0 => led_B0.DATAIN
 B0 => complementa2:inst1.A0
 B0 => blocos_logicos:inst6.B0
-B0 => led_B0.DATAIN
 B1 => somador:inst.B1
 B1 => comparadores_ULA:inst13.B1
+B1 => led_B1.DATAIN
 B1 => complementa2:inst1.A1
 B1 => blocos_logicos:inst6.B1
-B1 => led_B1.DATAIN
 B2 => somador:inst.B2
 B2 => comparadores_ULA:inst13.B2
+B2 => led_B2.DATAIN
 B2 => complementa2:inst1.A2
 B2 => blocos_logicos:inst6.B2
-B2 => led_B2.DATAIN
 B3 => somador:inst.B3
 B3 => comparadores_ULA:inst13.B3
+B3 => led_B3.DATAIN
 B3 => complementa2:inst1.A3
 B3 => blocos_logicos:inst6.B3
-B3 => led_B3.DATAIN
 SB => somador:inst.SB
 SB => comparadores_ULA:inst13.B4
+SB => led_SB.DATAIN
 SB => complementa2:inst1.SA
 SB => blocos_logicos:inst6.SB
-SB => led_SB.DATAIN
 s0 => inst7.IN0
 s0 => inst12.IN2
 s0 => MUX_3p1:inst3.S0
@@ -71,12 +71,6 @@ unid_f <= Decodificador:inst14.unid_f
 unid_g <= Decodificador:inst14.unid_g
 unid_a <= Decodificador:inst14.unid_a
 compara <= MUX_3p1:inst3.pin_name4
-f0 <= MUX_Operacoes:inst8.f0
-f1 <= MUX_Operacoes:inst8.f1
-f2 <= MUX_Operacoes:inst8.f2
-f3 <= MUX_Operacoes:inst8.f3
-f4 <= MUX_Operacoes:inst8.f4
-f5 <= MUX_Operacoes:inst8.f5
 led_B0 <= B0.DB_MAX_OUTPUT_PORT_TYPE
 led_B1 <= B1.DB_MAX_OUTPUT_PORT_TYPE
 led_B2 <= B2.DB_MAX_OUTPUT_PORT_TYPE
@@ -87,7 +81,13 @@ led_A1 <= A1.DB_MAX_OUTPUT_PORT_TYPE
 led_A2 <= A2.DB_MAX_OUTPUT_PORT_TYPE
 led_A3 <= A3.DB_MAX_OUTPUT_PORT_TYPE
 led_SA <= SA.DB_MAX_OUTPUT_PORT_TYPE
-f6 <= MUX_Operacoes:inst8.f6
+sinal <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+f0 <= MUX_Operacoes:inst8.f0
+f1 <= MUX_Operacoes:inst8.f1
+f2 <= MUX_Operacoes:inst8.f2
+f3 <= MUX_Operacoes:inst8.f3
+f4 <= MUX_Operacoes:inst8.f4
+f5 <= MUX_Operacoes:inst8.f5
 
 
 |circuito_completo|Decodificador:inst14
@@ -116,33 +116,36 @@ unid_a <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 
 |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2
 a <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A2 => segmento_a:122.A2
+A2 => segmento_a:inst.A2
 A2 => segmento_b:123.A2
 A2 => segmento_c:124.A2
 A2 => segmento_d:125.A2
 A2 => segmento_e:126.A2
-A2 => segmeto_f:127.A2
+A2 => segmeto_f:inst2.A2
 A2 => segmento_g:128.A2
-A1 => segmento_a:122.A1
+A1 => segmento_a:inst.A1
 A1 => segmento_b:123.A1
 A1 => segmento_c:124.A1
 A1 => segmento_d:125.A1
 A1 => segmento_e:126.A1
-A1 => segmeto_f:127.A1
+A1 => segmeto_f:inst2.A1
 A1 => segmento_g:128.A1
-A0 => segmento_a:122.A0
+A0 => segmento_a:inst.A0
 A0 => segmento_b:123.A0
 A0 => segmento_c:124.A0
 A0 => segmento_d:125.A0
 A0 => segmento_e:126.A0
-A0 => segmeto_f:127.A0
+A0 => segmeto_f:inst2.A0
 A0 => segmento_g:128.A0
-Seletor => segmento_a:122.Seletor
+A3 => segmento_a:inst.A3
+A3 => segmeto_f:inst2.A3
+A3 => segmento_g:128.A3
+Seletor => segmento_a:inst.Seletor
 Seletor => segmento_b:123.Seletor
 Seletor => segmento_c:124.Seletor
 Seletor => segmento_d:125.Seletor
 Seletor => segmento_e:126.Seletor
-Seletor => segmeto_f:127.Seletor
+Seletor => segmeto_f:inst2.Seletor
 Seletor => segmento_g:128.Seletor
 b <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c <= inst7.DB_MAX_OUTPUT_PORT_TYPE
@@ -150,16 +153,16 @@ d <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 e <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 f <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 g <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-A3 => segmento_g:128.A3
 
 
-|circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_a:122
+|circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_a:inst
 a <= 21.DB_MAX_OUTPUT_PORT_TYPE
-A0 => 14.IN0
+A0 => inst2.IN0
 A0 => inst10.IN0
 A1 => inst11.IN0
 A2 => inst.IN0
 A2 => 23.IN2
+A3 => inst1.IN0
 Seletor => 24.IN0
 
 
@@ -203,13 +206,15 @@ A1 => 2700.IN0
 A2 => 25700.IN1
 
 
-|circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmeto_f:127
+|circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmeto_f:inst2
 f <= 16667.DB_MAX_OUTPUT_PORT_TYPE
-A0 => 19992.IN0
-A0 => 19998.IN0
-A1 => 19992.IN1
-A1 => 19995.IN0
+A0 => inst1.IN0
+A0 => inst.IN1
 A2 => 19999.IN0
+A2 => inst.IN2
+A3 => 20000.IN0
+A1 => inst.IN0
+A1 => 19995.IN0
 Seletor => 199936.IN0
 
 
@@ -265,33 +270,36 @@ A0 => S0.DATAIN
 
 |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3
 a <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-A2 => segmento_a:122.A2
+A2 => segmento_a:inst.A2
 A2 => segmento_b:123.A2
 A2 => segmento_c:124.A2
 A2 => segmento_d:125.A2
 A2 => segmento_e:126.A2
-A2 => segmeto_f:127.A2
+A2 => segmeto_f:inst2.A2
 A2 => segmento_g:128.A2
-A1 => segmento_a:122.A1
+A1 => segmento_a:inst.A1
 A1 => segmento_b:123.A1
 A1 => segmento_c:124.A1
 A1 => segmento_d:125.A1
 A1 => segmento_e:126.A1
-A1 => segmeto_f:127.A1
+A1 => segmeto_f:inst2.A1
 A1 => segmento_g:128.A1
-A0 => segmento_a:122.A0
+A0 => segmento_a:inst.A0
 A0 => segmento_b:123.A0
 A0 => segmento_c:124.A0
 A0 => segmento_d:125.A0
 A0 => segmento_e:126.A0
-A0 => segmeto_f:127.A0
+A0 => segmeto_f:inst2.A0
 A0 => segmento_g:128.A0
-Seletor => segmento_a:122.Seletor
+A3 => segmento_a:inst.A3
+A3 => segmeto_f:inst2.A3
+A3 => segmento_g:128.A3
+Seletor => segmento_a:inst.Seletor
 Seletor => segmento_b:123.Seletor
 Seletor => segmento_c:124.Seletor
 Seletor => segmento_d:125.Seletor
 Seletor => segmento_e:126.Seletor
-Seletor => segmeto_f:127.Seletor
+Seletor => segmeto_f:inst2.Seletor
 Seletor => segmento_g:128.Seletor
 b <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 c <= inst7.DB_MAX_OUTPUT_PORT_TYPE
@@ -299,16 +307,16 @@ d <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 e <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 f <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 g <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-A3 => segmento_g:128.A3
 
 
-|circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_a:122
+|circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_a:inst
 a <= 21.DB_MAX_OUTPUT_PORT_TYPE
-A0 => 14.IN0
+A0 => inst2.IN0
 A0 => inst10.IN0
 A1 => inst11.IN0
 A2 => inst.IN0
 A2 => 23.IN2
+A3 => inst1.IN0
 Seletor => 24.IN0
 
 
@@ -352,13 +360,15 @@ A1 => 2700.IN0
 A2 => 25700.IN1
 
 
-|circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmeto_f:127
+|circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmeto_f:inst2
 f <= 16667.DB_MAX_OUTPUT_PORT_TYPE
-A0 => 19992.IN0
-A0 => 19998.IN0
-A1 => 19992.IN1
-A1 => 19995.IN0
+A0 => inst1.IN0
+A0 => inst.IN1
 A2 => 19999.IN0
+A2 => inst.IN2
+A3 => 20000.IN0
+A1 => inst.IN0
+A1 => 19995.IN0
 Seletor => 199936.IN0
 
 
@@ -780,15 +790,23 @@ A4 => inst.IN0
 B4 => comparador_sinal:bit4.B
 B4 => inst.IN1
 A3 => comp_bit_cascata:bit3.A
+A3 => inst1.IN3
 B3 => comp_bit_cascata:bit3.B
+B3 => inst1.IN7
 A2 => comp_bit_cascata:bit2.A
+A2 => inst1.IN1
 B2 => comp_bit_cascata:bit2.B
+B2 => inst1.IN6
 A1 => comp_bit_cascata:bit1.A
+A1 => inst1.IN2
 B1 => comp_bit_cascata:bit1.B
+B1 => inst1.IN4
 A0 => comp_bit_cascata:bit0.A
+A0 => inst1.IN0
 B0 => comp_bit_cascata:bit0.B
+B0 => inst1.IN5
 fio_menor <= inst25.DB_MAX_OUTPUT_PORT_TYPE
-fio_igual <= comp_bit_cascata:bit0.igual
+fio_igual <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |circuito_completo|comparadores_ULA:inst13|comp_bit_cascata:bit0
@@ -874,33 +892,43 @@ menor <= inst.DB_MAX_OUTPUT_PORT_TYPE
 |circuito_completo|MUX_Operacoes:inst8
 f0 <= MUX_Intermediario_operacoes_6bits:f7.OUT
 s0 => MUX_Intermediario_operacoes_6bits:f7.s0
+s0 => MUX_Intermediario_operacoes_6bits:f8.s0
+s0 => MUX_Intermediario_operacoes_6bits:f9.s0
 s0 => MUX_Intermediario_operacoes_6bits:f10.s0
 s0 => MUX_Intermediario_operacoes_6bits:f11.s0
 s0 => MUX_Intermediario_operacoes_6bits:f12.s0
 s0 => MUX_Intermediario_operacoes_6bits:f13.s0
-s0 => MUX_Intermediario_operacoes_6bits:f8.s0
-s0 => MUX_Intermediario_operacoes_6bits:f9.s0
 s1 => MUX_Intermediario_operacoes_6bits:f7.s1
+s1 => MUX_Intermediario_operacoes_6bits:f8.s1
+s1 => MUX_Intermediario_operacoes_6bits:f9.s1
 s1 => MUX_Intermediario_operacoes_6bits:f10.s1
 s1 => MUX_Intermediario_operacoes_6bits:f11.s1
 s1 => MUX_Intermediario_operacoes_6bits:f12.s1
 s1 => MUX_Intermediario_operacoes_6bits:f13.s1
-s1 => MUX_Intermediario_operacoes_6bits:f8.s1
-s1 => MUX_Intermediario_operacoes_6bits:f9.s1
 s2 => MUX_Intermediario_operacoes_6bits:f7.s2
+s2 => MUX_Intermediario_operacoes_6bits:f8.s2
+s2 => MUX_Intermediario_operacoes_6bits:f9.s2
 s2 => MUX_Intermediario_operacoes_6bits:f10.s2
 s2 => MUX_Intermediario_operacoes_6bits:f11.s2
 s2 => MUX_Intermediario_operacoes_6bits:f12.s2
 s2 => MUX_Intermediario_operacoes_6bits:f13.s2
-s2 => MUX_Intermediario_operacoes_6bits:f8.s2
-s2 => MUX_Intermediario_operacoes_6bits:f9.s2
 a0 => MUX_Intermediario_operacoes_6bits:f7.a0
 b0 => MUX_Intermediario_operacoes_6bits:f7.b0
 c0 => MUX_Intermediario_operacoes_6bits:f7.c0
 d0 => MUX_Intermediario_operacoes_6bits:f7.d0
 e0 => MUX_Intermediario_operacoes_6bits:f7.e0
-f1 <= <GND>
-f2 <= <GND>
+f1 <= MUX_Intermediario_operacoes_6bits:f8.OUT
+a1 => MUX_Intermediario_operacoes_6bits:f8.a0
+b1 => MUX_Intermediario_operacoes_6bits:f8.b0
+c1 => MUX_Intermediario_operacoes_6bits:f8.c0
+d1 => MUX_Intermediario_operacoes_6bits:f8.d0
+e1 => MUX_Intermediario_operacoes_6bits:f8.e0
+f2 <= MUX_Intermediario_operacoes_6bits:f9.OUT
+a2 => MUX_Intermediario_operacoes_6bits:f9.a0
+b2 => MUX_Intermediario_operacoes_6bits:f9.b0
+c2 => MUX_Intermediario_operacoes_6bits:f9.c0
+d2 => MUX_Intermediario_operacoes_6bits:f9.d0
+e2 => MUX_Intermediario_operacoes_6bits:f9.e0
 f3 <= MUX_Intermediario_operacoes_6bits:f10.OUT
 a3 => MUX_Intermediario_operacoes_6bits:f10.a0
 b3 => MUX_Intermediario_operacoes_6bits:f10.b0
@@ -920,148 +948,138 @@ c5 => MUX_Intermediario_operacoes_6bits:f12.c0
 d5 => MUX_Intermediario_operacoes_6bits:f12.d0
 e5 => MUX_Intermediario_operacoes_6bits:f12.e0
 f6 <= MUX_Intermediario_operacoes_6bits:f13.OUT
-a1 => MUX_Intermediario_operacoes_6bits:f8.a0
-b1 => MUX_Intermediario_operacoes_6bits:f8.b0
-c1 => MUX_Intermediario_operacoes_6bits:f8.c0
-d1 => MUX_Intermediario_operacoes_6bits:f8.d0
-e1 => MUX_Intermediario_operacoes_6bits:f8.e0
-a2 => MUX_Intermediario_operacoes_6bits:f9.a0
-b2 => MUX_Intermediario_operacoes_6bits:f9.b0
-c2 => MUX_Intermediario_operacoes_6bits:f9.c0
-d2 => MUX_Intermediario_operacoes_6bits:f9.d0
-e2 => MUX_Intermediario_operacoes_6bits:f9.e0
 
 
 |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f7
 OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
+s0 => 001.IN0
 s0 => 111.IN0
+s0 => inst.IN0
 s1 => inst4.IN0
-s1 => 110.IN1
 s1 => 111.IN1
+s1 => 110.IN1
 s1 => 010.IN1
-s2 => 001.IN2
 s2 => inst5.IN0
 s2 => 111.IN2
-b0 => T1.IN1
+s2 => 110.IN2
+c0 => T1.IN1
 d0 => T3.IN1
 e0 => T4.IN1
-c0 => T2.IN1
-a0 => T0.IN1
-
-
-|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f10
-OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
-s0 => 111.IN0
-s1 => inst4.IN0
-s1 => 110.IN1
-s1 => 111.IN1
-s1 => 010.IN1
-s2 => 001.IN2
-s2 => inst5.IN0
-s2 => 111.IN2
-b0 => T1.IN1
-d0 => T3.IN1
-e0 => T4.IN1
-c0 => T2.IN1
-a0 => T0.IN1
-
-
-|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f11
-OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
-s0 => 111.IN0
-s1 => inst4.IN0
-s1 => 110.IN1
-s1 => 111.IN1
-s1 => 010.IN1
-s2 => 001.IN2
-s2 => inst5.IN0
-s2 => 111.IN2
-b0 => T1.IN1
-d0 => T3.IN1
-e0 => T4.IN1
-c0 => T2.IN1
-a0 => T0.IN1
-
-
-|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f12
-OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
-s0 => 111.IN0
-s1 => inst4.IN0
-s1 => 110.IN1
-s1 => 111.IN1
-s1 => 010.IN1
-s2 => 001.IN2
-s2 => inst5.IN0
-s2 => 111.IN2
-b0 => T1.IN1
-d0 => T3.IN1
-e0 => T4.IN1
-c0 => T2.IN1
-a0 => T0.IN1
-
-
-|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f13
-OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
-s0 => 111.IN0
-s1 => inst4.IN0
-s1 => 110.IN1
-s1 => 111.IN1
-s1 => 010.IN1
-s2 => 001.IN2
-s2 => inst5.IN0
-s2 => 111.IN2
-b0 => T1.IN1
-d0 => T3.IN1
-e0 => T4.IN1
-c0 => T2.IN1
+b0 => T2.IN1
 a0 => T0.IN1
 
 
 |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f8
 OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
+s0 => 001.IN0
 s0 => 111.IN0
+s0 => inst.IN0
 s1 => inst4.IN0
-s1 => 110.IN1
 s1 => 111.IN1
+s1 => 110.IN1
 s1 => 010.IN1
-s2 => 001.IN2
 s2 => inst5.IN0
 s2 => 111.IN2
-b0 => T1.IN1
+s2 => 110.IN2
+c0 => T1.IN1
 d0 => T3.IN1
 e0 => T4.IN1
-c0 => T2.IN1
+b0 => T2.IN1
 a0 => T0.IN1
 
 
 |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f9
 OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-s0 => inst.IN0
-s0 => 110.IN0
+s0 => 001.IN0
 s0 => 111.IN0
+s0 => inst.IN0
 s1 => inst4.IN0
-s1 => 110.IN1
 s1 => 111.IN1
+s1 => 110.IN1
 s1 => 010.IN1
-s2 => 001.IN2
 s2 => inst5.IN0
 s2 => 111.IN2
-b0 => T1.IN1
+s2 => 110.IN2
+c0 => T1.IN1
 d0 => T3.IN1
 e0 => T4.IN1
-c0 => T2.IN1
+b0 => T2.IN1
+a0 => T0.IN1
+
+
+|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f10
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s0 => 001.IN0
+s0 => 111.IN0
+s0 => inst.IN0
+s1 => inst4.IN0
+s1 => 111.IN1
+s1 => 110.IN1
+s1 => 010.IN1
+s2 => inst5.IN0
+s2 => 111.IN2
+s2 => 110.IN2
+c0 => T1.IN1
+d0 => T3.IN1
+e0 => T4.IN1
+b0 => T2.IN1
+a0 => T0.IN1
+
+
+|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f11
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s0 => 001.IN0
+s0 => 111.IN0
+s0 => inst.IN0
+s1 => inst4.IN0
+s1 => 111.IN1
+s1 => 110.IN1
+s1 => 010.IN1
+s2 => inst5.IN0
+s2 => 111.IN2
+s2 => 110.IN2
+c0 => T1.IN1
+d0 => T3.IN1
+e0 => T4.IN1
+b0 => T2.IN1
+a0 => T0.IN1
+
+
+|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f12
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s0 => 001.IN0
+s0 => 111.IN0
+s0 => inst.IN0
+s1 => inst4.IN0
+s1 => 111.IN1
+s1 => 110.IN1
+s1 => 010.IN1
+s2 => inst5.IN0
+s2 => 111.IN2
+s2 => 110.IN2
+c0 => T1.IN1
+d0 => T3.IN1
+e0 => T4.IN1
+b0 => T2.IN1
+a0 => T0.IN1
+
+
+|circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f13
+OUT <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s0 => 001.IN0
+s0 => 111.IN0
+s0 => inst.IN0
+s1 => inst4.IN0
+s1 => 111.IN1
+s1 => 110.IN1
+s1 => 010.IN1
+s2 => inst5.IN0
+s2 => 111.IN2
+s2 => 110.IN2
+c0 => T1.IN1
+d0 => T3.IN1
+e0 => T4.IN1
+b0 => T2.IN1
 a0 => T0.IN1
 
 

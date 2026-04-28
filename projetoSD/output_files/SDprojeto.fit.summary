@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Apr 28 09:58:09 2026
-Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Fitter Status : Successful - Tue Apr 28 14:10:47 2026
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : SDprojeto
 Top-level Entity Name : circuito_completo
 Family : Cyclone IV E
-Device : EP4CE6E22C6
+Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 61 / 6,272 ( < 1 % )
-    Total combinational functions : 61 / 6,272 ( < 1 % )
-    Dedicated logic registers : 0 / 6,272 ( 0 % )
+Total logic elements : 87 / 114,480 ( < 1 % )
+    Total combinational functions : 87 / 114,480 ( < 1 % )
+    Dedicated logic registers : 0 / 114,480 ( 0 % )
 Total registers : 0
-Total pins : 20 / 92 ( 22 % )
+Total pins : 45 / 529 ( 9 % )
 Total virtual pins : 0
-Total memory bits : 0 / 276,480 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

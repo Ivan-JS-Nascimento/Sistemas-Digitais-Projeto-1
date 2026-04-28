@@ -1,6 +1,6 @@
 Analysis & Synthesis report for SDprojeto
-Tue Apr 28 10:14:41 2026
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Apr 28 14:10:38 2026
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -10,14 +10,20 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,20 +43,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Tue Apr 28 10:14:41 2026           ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 28 14:10:38 2026       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; SDprojeto                                   ;
 ; Top-level Entity Name              ; circuito_completo                           ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 87                                          ;
+;     Total combinational functions  ; 87                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 45                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -59,6 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                            ; circuito_completo  ; SDprojeto          ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -144,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -155,16 +162,177 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++---------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                              ; Library ;
++---------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------+---------+
+; soma.bdf                              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/soma.bdf                              ;         ;
+; complementa2.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/complementa2.bdf                      ;         ;
+; somador.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/somador.bdf                           ;         ;
+; circuito_completo.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/circuito_completo.bdf                 ;         ;
+; comparador_sinal.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/comparador_sinal.bdf                  ;         ;
+; comp_bit_cascata.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/comp_bit_cascata.bdf                  ;         ;
+; comparadores_ULA.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/comparadores_ULA.bdf                  ;         ;
+; Decodificador.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/Decodificador.bdf                     ;         ;
+; Blocos_logicos.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/Blocos_logicos.bdf                    ;         ;
+; MUX_Intermediario_Operacoes_6bits.bdf ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/MUX_Intermediario_Operacoes_6bits.bdf ;         ;
+; MUX_Operacoes.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/MUX_Operacoes.bdf                     ;         ;
+; Conversor.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/Conversor.bdf                         ;         ;
+; Decoder_7seg.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/Decoder_7seg.bdf                      ;         ;
+; MUX_3p1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/MUX_3p1.bdf                           ;         ;
+; segmeto_f.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmeto_f.bdf                         ;         ;
+; segmento_g.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_g.bdf                        ;         ;
+; segmento_e.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_e.bdf                        ;         ;
+; segmento_d.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_d.bdf                        ;         ;
+; segmento_c.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_c.bdf                        ;         ;
+; segmento_b.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_b.bdf                        ;         ;
+; segmento_a.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ijsn/Sistemas-Digitais-Projeto-1/projetoSD/segmento_a.bdf                        ;         ;
++---------------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 87       ;
+;                                             ;          ;
+; Total combinational functions               ; 87       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 62       ;
+;     -- 3 input functions                    ; 20       ;
+;     -- <=2 input functions                  ; 5        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 87       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 45       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; A0~input ;
+; Maximum fan-out                             ; 15       ;
+; Total fan-out                               ; 393      ;
+; Average fan-out                             ; 2.22     ;
++---------------------------------------------+----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                        ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Entity Name                       ; Library Name ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------------+--------------+
+; |circuito_completo                            ; 87 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |circuito_completo                                                           ; circuito_completo                 ; work         ;
+;    |Decodificador:inst14|                     ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14                                      ; Decodificador                     ; work         ;
+;       |Conversor:inst|                        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Conversor:inst                       ; Conversor                         ; work         ;
+;       |Decoder_7seg:inst2|                    ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2                   ; Decoder_7seg                      ; work         ;
+;          |segmento_c:124|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_c:124    ; segmento_c                        ; work         ;
+;          |segmento_d:125|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_d:125    ; segmento_d                        ; work         ;
+;          |segmento_e:126|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_e:126    ; segmento_e                        ; work         ;
+;          |segmento_g:128|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmento_g:128    ; segmento_g                        ; work         ;
+;          |segmeto_f:127|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst2|segmeto_f:127     ; segmeto_f                         ; work         ;
+;       |Decoder_7seg:inst3|                    ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3                   ; Decoder_7seg                      ; work         ;
+;          |segmento_a:122|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_a:122    ; segmento_a                        ; work         ;
+;          |segmento_b:123|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_b:123    ; segmento_b                        ; work         ;
+;          |segmento_c:124|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_c:124    ; segmento_c                        ; work         ;
+;          |segmento_d:125|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_d:125    ; segmento_d                        ; work         ;
+;          |segmento_e:126|                     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_e:126    ; segmento_e                        ; work         ;
+;          |segmento_g:128|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmento_g:128    ; segmento_g                        ; work         ;
+;          |segmeto_f:127|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|Decodificador:inst14|Decoder_7seg:inst3|segmeto_f:127     ; segmeto_f                         ; work         ;
+;    |MUX_3p1:inst3|                            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_3p1:inst3                                             ; MUX_3p1                           ; work         ;
+;    |MUX_Operacoes:inst8|                      ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8                                       ; MUX_Operacoes                     ; work         ;
+;       |MUX_Intermediario_operacoes_6bits:f10| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f10 ; MUX_Intermediario_operacoes_6bits ; work         ;
+;       |MUX_Intermediario_operacoes_6bits:f11| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f11 ; MUX_Intermediario_operacoes_6bits ; work         ;
+;       |MUX_Intermediario_operacoes_6bits:f12| ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f12 ; MUX_Intermediario_operacoes_6bits ; work         ;
+;       |MUX_Intermediario_operacoes_6bits:f13| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f13 ; MUX_Intermediario_operacoes_6bits ; work         ;
+;       |MUX_Intermediario_operacoes_6bits:f7|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|MUX_Operacoes:inst8|MUX_Intermediario_operacoes_6bits:f7  ; MUX_Intermediario_operacoes_6bits ; work         ;
+;    |comparadores_ULA:inst13|                  ; 11 (6)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|comparadores_ULA:inst13                                   ; comparadores_ULA                  ; work         ;
+;       |comp_bit_cascata:bit0|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|comparadores_ULA:inst13|comp_bit_cascata:bit0             ; comp_bit_cascata                  ; work         ;
+;       |comp_bit_cascata:bit1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|comparadores_ULA:inst13|comp_bit_cascata:bit1             ; comp_bit_cascata                  ; work         ;
+;       |comp_bit_cascata:bit2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|comparadores_ULA:inst13|comp_bit_cascata:bit2             ; comp_bit_cascata                  ; work         ;
+;       |comp_bit_cascata:bit3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|comparadores_ULA:inst13|comp_bit_cascata:bit3             ; comp_bit_cascata                  ; work         ;
+;    |somador:inst|                             ; 34 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst                                              ; somador                           ; work         ;
+;       |complementa2:inst1|                    ; 5 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst1                           ; complementa2                      ; work         ;
+;          |soma:inst1|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst1|soma:inst1                ; soma                              ; work         ;
+;          |soma:inst2|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst1|soma:inst2                ; soma                              ; work         ;
+;          |soma:inst|                          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst1|soma:inst                 ; soma                              ; work         ;
+;       |complementa2:inst9|                    ; 12 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst9                           ; complementa2                      ; work         ;
+;          |soma:inst1|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst9|soma:inst1                ; soma                              ; work         ;
+;          |soma:inst2|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst9|soma:inst2                ; soma                              ; work         ;
+;          |soma:inst3|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst9|soma:inst3                ; soma                              ; work         ;
+;          |soma:inst4|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst9|soma:inst4                ; soma                              ; work         ;
+;       |complementa2:inst|                     ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst                            ; complementa2                      ; work         ;
+;          |soma:inst1|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst|soma:inst1                 ; soma                              ; work         ;
+;          |soma:inst2|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst|soma:inst2                 ; soma                              ; work         ;
+;          |soma:inst3|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|complementa2:inst|soma:inst3                 ; soma                              ; work         ;
+;       |soma:inst4|                            ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|soma:inst4                                   ; soma                              ; work         ;
+;       |soma:inst5|                            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|soma:inst5                                   ; soma                              ; work         ;
+;       |soma:inst6|                            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|soma:inst6                                   ; soma                              ; work         ;
+;       |soma:inst7|                            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|soma:inst7                                   ; soma                              ; work         ;
+;       |soma:inst8|                            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |circuito_completo|somador:inst|soma:inst8                                   ; soma                              ; work         ;
++-----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 45                          ;
+; cycloneiii_lcell_comb ; 92                          ;
+;     normal            ; 92                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 62                          ;
+;                       ;                             ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 9.92                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Apr 28 10:14:32 2026
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Tue Apr 28 14:10:31 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SDprojeto -c SDprojeto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file soma.bdf
     Info (12023): Found entity 1: soma
 Info (12021): Found 1 design units, including 1 entities, in source file complementa2.bdf
@@ -193,6 +361,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file decoder
     Info (12023): Found entity 1: Decoder_7seg
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3p1.bdf
     Info (12023): Found entity 1: MUX_3p1
+Info (12021): Found 1 design units, including 1 entities, in source file segmeto_f.bdf
+    Info (12023): Found entity 1: segmeto_f
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_g.bdf
+    Info (12023): Found entity 1: segmento_g
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_e.bdf
+    Info (12023): Found entity 1: segmento_e
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_d.bdf
+    Info (12023): Found entity 1: segmento_d
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_c.bdf
+    Info (12023): Found entity 1: segmento_c
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_b.bdf
+    Info (12023): Found entity 1: segmento_b
+Info (12021): Found 1 design units, including 1 entities, in source file segmento_a.bdf
+    Info (12023): Found entity 1: segmento_a
 Info (12127): Elaborating entity "circuito_completo" for the top level hierarchy
 Info (12128): Elaborating entity "Decodificador" for hierarchy "Decodificador:inst14"
 Warning (275011): Block or symbol "NOT" of instance "inst5" overlaps another block or symbol
@@ -204,6 +386,13 @@ Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another bl
 Warning (275011): Block or symbol "NOT" of instance "inst16" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst18" overlaps another block or symbol
 Info (12128): Elaborating entity "Decoder_7seg" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2"
+Info (12128): Elaborating entity "segmento_a" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_a:122"
+Info (12128): Elaborating entity "segmento_b" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_b:123"
+Info (12128): Elaborating entity "segmento_c" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_c:124"
+Info (12128): Elaborating entity "segmento_d" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_d:125"
+Info (12128): Elaborating entity "segmento_e" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_e:126"
+Info (12128): Elaborating entity "segmeto_f" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmeto_f:127"
+Info (12128): Elaborating entity "segmento_g" for hierarchy "Decodificador:inst14|Decoder_7seg:inst2|segmento_g:128"
 Info (12128): Elaborating entity "Conversor" for hierarchy "Decodificador:inst14|Conversor:inst"
 Info (12128): Elaborating entity "somador" for hierarchy "somador:inst"
 Info (12128): Elaborating entity "complementa2" for hierarchy "somador:inst|complementa2:inst9"
@@ -221,24 +410,20 @@ Warning (275008): Primitive "AND3" of instance "011" not used
 Warning (275008): Primitive "AND3" of instance "100" not used
 Warning (275008): Primitive "AND3" of instance "101" not used
 Info (12128): Elaborating entity "blocos_logicos" for hierarchy "blocos_logicos:inst6"
-Error (12006): Node instance "122" instantiates undefined entity "segmento_a". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "123" instantiates undefined entity "segmento_b". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "124" instantiates undefined entity "segmento_c". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "125" instantiates undefined entity "segmento_d". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "126" instantiates undefined entity "segmento_e". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "127" instantiates undefined entity "segmeto_f". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "128" instantiates undefined entity "segmento_g". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "122" instantiates undefined entity "segmento_a". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "123" instantiates undefined entity "segmento_b". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "124" instantiates undefined entity "segmento_c". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "125" instantiates undefined entity "segmento_d". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "126" instantiates undefined entity "segmento_e". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "127" instantiates undefined entity "segmeto_f". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error (12006): Node instance "128" instantiates undefined entity "segmento_g". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP.
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 14 errors, 15 warnings
-    Error: Peak virtual memory: 4736 megabytes
-    Error: Processing ended: Tue Apr 28 10:14:41 2026
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:20
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "f1" is stuck at GND
+    Warning (13410): Pin "f2" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 132 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 87 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Tue Apr 28 14:10:38 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:19
 
 

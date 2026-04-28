@@ -4,63 +4,123 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pin_name1",
+					"name" : "dez_b",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name4",
+					"name" : "dez_c",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name7",
+					"name" : "dez_d",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name8",
+					"name" : "dez_e",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name9",
+					"name" : "dez_f",
 					"strict" : false
 				},
 				{
-					"name" : "SA",
+					"name" : "dez_g",
 					"strict" : false
 				},
 				{
-					"name" : "SB",
+					"name" : "dez_a",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "unid_b",
 					"strict" : false
 				},
 				{
-					"name" : "B1",
+					"name" : "unid_c",
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "unid_d",
 					"strict" : false
 				},
 				{
-					"name" : "B0",
+					"name" : "unid_e",
 					"strict" : false
 				},
 				{
-					"name" : "A2",
+					"name" : "unid_f",
 					"strict" : false
 				},
 				{
-					"name" : "B2",
+					"name" : "unid_g",
 					"strict" : false
 				},
 				{
-					"name" : "A3",
+					"name" : "unid_a",
 					"strict" : false
 				},
 				{
-					"name" : "B3",
+					"name" : "compara",
+					"strict" : false
+				},
+				{
+					"name" : "f0",
+					"strict" : false
+				},
+				{
+					"name" : "f3",
+					"strict" : false
+				},
+				{
+					"name" : "f4",
+					"strict" : false
+				},
+				{
+					"name" : "f5",
+					"strict" : false
+				},
+				{
+					"name" : "led_B0",
+					"strict" : false
+				},
+				{
+					"name" : "led_B1",
+					"strict" : false
+				},
+				{
+					"name" : "led_B2",
+					"strict" : false
+				},
+				{
+					"name" : "led_B3",
+					"strict" : false
+				},
+				{
+					"name" : "led_SB",
+					"strict" : false
+				},
+				{
+					"name" : "led_A0",
+					"strict" : false
+				},
+				{
+					"name" : "led_A1",
+					"strict" : false
+				},
+				{
+					"name" : "led_A2",
+					"strict" : false
+				},
+				{
+					"name" : "led_A3",
+					"strict" : false
+				},
+				{
+					"name" : "led_SA",
+					"strict" : false
+				},
+				{
+					"name" : "f6",
 					"strict" : false
 				},
 				{
@@ -68,11 +128,51 @@
 					"strict" : false
 				},
 				{
+					"name" : "s0",
+					"strict" : false
+				},
+				{
 					"name" : "s1",
 					"strict" : false
 				},
 				{
-					"name" : "s0",
+					"name" : "B3",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "SB",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "SA",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
 					"strict" : false
 				}
 			]

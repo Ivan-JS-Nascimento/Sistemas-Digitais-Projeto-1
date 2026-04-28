@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Apr 28 09:57:40 2026
+Analysis & Synthesis Status : Failed - Tue Apr 28 10:14:41 2026
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : SDprojeto
 Top-level Entity Name : circuito_completo
 Family : Cyclone IV E
-Total logic elements : 61
-    Total combinational functions : 61
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 20
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

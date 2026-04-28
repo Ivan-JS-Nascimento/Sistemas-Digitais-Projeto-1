@@ -226,7 +226,7 @@ on the Quartus Prime software download page.
 	(input)
 	(rect 56 168 224 184)
 	(text "INPUT" (rect 125 0 153 9)(font "Arial" (font_size 6)))
-	(text "s0" (rect 5 0 17 10)(font "Arial" ))
+	(text "s0" (rect 5 0 16 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -622,23 +622,6 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 1952 840 1984 872)
-	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
-	(text "inst7" (rect 3 21 25 31)(font "DejaVu Sans Condensed" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16))
-		(line (pt 16 16)(pt 24 8))
-		(line (pt 8 8)(pt 24 8))
-	)
-)
-(symbol
 	(rect 2008 288 2104 864)
 	(text "MUX_Operacoes" (rect 5 0 99 13)(font "DejaVu Sans Condensed" (font_size 8)))
 	(text "inst8" (rect 8 562 30 572)(font "DejaVu Sans Condensed" ))
@@ -926,6 +909,171 @@ on the Quartus Prime software download page.
 		(rectangle (rect 16 16 80 560))
 	)
 )
+(symbol
+	(rect 1672 784 1704 816)
+	(text "GND" (rect 8 16 29 25)(font "Arial" (font_size 6)))
+	(text "inst5" (rect 3 21 25 31)(font "DejaVu Sans Condensed" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 11)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1024 1080 1120 1304)
+	(text "blocos_logicos" (rect 5 0 87 13)(font "DejaVu Sans Condensed" (font_size 8)))
+	(text "inst6" (rect 8 210 30 220)(font "DejaVu Sans Condensed" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "B0" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "B0" (rect 21 27 36 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B1" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "B1" (rect 21 43 36 56)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "B2" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "B2" (rect 21 59 36 72)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "B3" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "B3" (rect 21 75 36 88)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SB" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "SB" (rect 21 91 36 104)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "A0" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "A0" (rect 21 107 36 120)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "A1" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "A1" (rect 21 123 36 136)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "A2" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "A2" (rect 21 139 36 152)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "A3" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "A3" (rect 21 155 36 168)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "SA" (rect 0 0 15 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "SA" (rect 21 171 36 184)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 96 32)
+		(output)
+		(text "xor4" (rect 0 0 25 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "xor4" (rect 50 27 75 40)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 32)(pt 80 32))
+	)
+	(port
+		(pt 96 48)
+		(output)
+		(text "xor0" (rect 0 0 25 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "xor0" (rect 50 43 75 56)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 48)(pt 80 48))
+	)
+	(port
+		(pt 96 64)
+		(output)
+		(text "xor1" (rect 0 0 25 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "xor1" (rect 50 59 75 72)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 64)(pt 80 64))
+	)
+	(port
+		(pt 96 80)
+		(output)
+		(text "xor2" (rect 0 0 25 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "xor2" (rect 50 75 75 88)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 80)(pt 80 80))
+	)
+	(port
+		(pt 96 96)
+		(output)
+		(text "xor3" (rect 0 0 25 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "xor3" (rect 50 91 75 104)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 96)(pt 80 96))
+	)
+	(port
+		(pt 96 112)
+		(output)
+		(text "and4" (rect 0 0 28 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "and4" (rect 47 107 75 120)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 112)(pt 80 112))
+	)
+	(port
+		(pt 96 128)
+		(output)
+		(text "and0" (rect 0 0 28 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "and0" (rect 47 123 75 136)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 128)(pt 80 128))
+	)
+	(port
+		(pt 96 144)
+		(output)
+		(text "and1" (rect 0 0 28 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "and1" (rect 47 139 75 152)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 144)(pt 80 144))
+	)
+	(port
+		(pt 96 160)
+		(output)
+		(text "and2" (rect 0 0 28 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "and2" (rect 47 155 75 168)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 160)(pt 80 160))
+	)
+	(port
+		(pt 96 176)
+		(output)
+		(text "and3" (rect 0 0 28 13)(font "DejaVu Sans Condensed" (font_size 8)))
+		(text "and3" (rect 47 171 75 184)(font "DejaVu Sans Condensed" (font_size 8)))
+		(line (pt 96 176)(pt 80 176))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 208))
+	)
+)
 (connector
 	(pt 1024 416)
 	(pt 664 416)
@@ -1091,22 +1239,6 @@ on the Quartus Prime software download page.
 	(pt 680 400)
 )
 (connector
-	(pt 448 -40)
-	(pt 448 608)
-)
-(connector
-	(pt 448 608)
-	(pt 448 768)
-)
-(connector
-	(pt 464 -56)
-	(pt 464 624)
-)
-(connector
-	(pt 464 624)
-	(pt 464 768)
-)
-(connector
 	(pt 480 -184)
 	(pt 480 -72)
 )
@@ -1123,96 +1255,32 @@ on the Quartus Prime software download page.
 	(pt 480 640)
 )
 (connector
-	(pt 480 -72)
-	(pt 480 640)
-)
-(connector
-	(pt 480 640)
-	(pt 480 768)
-)
-(connector
 	(pt 1032 656)
 	(pt 496 656)
-)
-(connector
-	(pt 496 -88)
-	(pt 496 656)
-)
-(connector
-	(pt 496 656)
-	(pt 496 768)
 )
 (connector
 	(pt 1032 672)
 	(pt 512 672)
 )
 (connector
-	(pt 512 -104)
-	(pt 512 672)
-)
-(connector
-	(pt 512 672)
-	(pt 512 768)
-)
-(connector
 	(pt 1032 688)
 	(pt 616 688)
-)
-(connector
-	(pt 616 480)
-	(pt 616 688)
-)
-(connector
-	(pt 616 688)
-	(pt 616 976)
 )
 (connector
 	(pt 1032 704)
 	(pt 632 704)
 )
 (connector
-	(pt 632 448)
-	(pt 632 704)
-)
-(connector
-	(pt 632 704)
-	(pt 632 976)
-)
-(connector
 	(pt 1032 720)
 	(pt 648 720)
-)
-(connector
-	(pt 648 432)
-	(pt 648 720)
-)
-(connector
-	(pt 648 720)
-	(pt 648 976)
 )
 (connector
 	(pt 1032 736)
 	(pt 664 736)
 )
 (connector
-	(pt 664 416)
-	(pt 664 736)
-)
-(connector
-	(pt 664 736)
-	(pt 664 976)
-)
-(connector
 	(pt 1032 752)
 	(pt 680 752)
-)
-(connector
-	(pt 680 400)
-	(pt 680 752)
-)
-(connector
-	(pt 680 752)
-	(pt 680 976)
 )
 (connector
 	(pt 1880 464)
@@ -1443,58 +1511,6 @@ on the Quartus Prime software download page.
 	(pt 2008 640)
 )
 (connector
-	(pt 2008 840)
-	(pt 1968 840)
-)
-(connector
-	(pt 2008 656)
-	(pt 2008 672)
-)
-(connector
-	(pt 2008 672)
-	(pt 2008 688)
-)
-(connector
-	(pt 2008 688)
-	(pt 2008 704)
-)
-(connector
-	(pt 2008 704)
-	(pt 2008 720)
-)
-(connector
-	(pt 2008 720)
-	(pt 2008 736)
-)
-(connector
-	(pt 2008 736)
-	(pt 2008 752)
-)
-(connector
-	(pt 2008 752)
-	(pt 2008 768)
-)
-(connector
-	(pt 2008 768)
-	(pt 2008 784)
-)
-(connector
-	(pt 2008 784)
-	(pt 2008 800)
-)
-(connector
-	(pt 2008 800)
-	(pt 2008 816)
-)
-(connector
-	(pt 2008 816)
-	(pt 2008 832)
-)
-(connector
-	(pt 2008 832)
-	(pt 2008 840)
-)
-(connector
 	(pt 224 176)
 	(pt 1496 176)
 )
@@ -1566,6 +1582,262 @@ on the Quartus Prime software download page.
 	(pt 1136 592)
 	(pt 1296 592)
 )
+(connector
+	(pt 680 1112)
+	(pt 1024 1112)
+)
+(connector
+	(pt 680 400)
+	(pt 680 752)
+)
+(connector
+	(pt 680 752)
+	(pt 680 1112)
+)
+(connector
+	(pt 664 1128)
+	(pt 1024 1128)
+)
+(connector
+	(pt 664 416)
+	(pt 664 736)
+)
+(connector
+	(pt 664 736)
+	(pt 664 1128)
+)
+(connector
+	(pt 648 1144)
+	(pt 1024 1144)
+)
+(connector
+	(pt 648 432)
+	(pt 648 720)
+)
+(connector
+	(pt 648 720)
+	(pt 648 1144)
+)
+(connector
+	(pt 632 1160)
+	(pt 1024 1160)
+)
+(connector
+	(pt 632 448)
+	(pt 632 704)
+)
+(connector
+	(pt 632 704)
+	(pt 632 1160)
+)
+(connector
+	(pt 616 1176)
+	(pt 1024 1176)
+)
+(connector
+	(pt 616 480)
+	(pt 616 688)
+)
+(connector
+	(pt 616 688)
+	(pt 616 1176)
+)
+(connector
+	(pt 512 1192)
+	(pt 1024 1192)
+)
+(connector
+	(pt 512 -104)
+	(pt 512 672)
+)
+(connector
+	(pt 512 672)
+	(pt 512 1192)
+)
+(connector
+	(pt 496 1208)
+	(pt 1024 1208)
+)
+(connector
+	(pt 496 -88)
+	(pt 496 656)
+)
+(connector
+	(pt 496 656)
+	(pt 496 1208)
+)
+(connector
+	(pt 480 1224)
+	(pt 1024 1224)
+)
+(connector
+	(pt 480 -72)
+	(pt 480 640)
+)
+(connector
+	(pt 480 640)
+	(pt 480 1224)
+)
+(connector
+	(pt 464 1240)
+	(pt 1024 1240)
+)
+(connector
+	(pt 464 -56)
+	(pt 464 624)
+)
+(connector
+	(pt 464 624)
+	(pt 464 1240)
+)
+(connector
+	(pt 448 1256)
+	(pt 1024 1256)
+)
+(connector
+	(pt 448 -40)
+	(pt 448 608)
+)
+(connector
+	(pt 448 608)
+	(pt 448 1256)
+)
+(connector
+	(pt 1120 1112)
+	(pt 1768 1112)
+)
+(connector
+	(pt 1120 1128)
+	(pt 1784 1128)
+)
+(connector
+	(pt 1120 1144)
+	(pt 1808 1144)
+)
+(connector
+	(pt 1120 1176)
+	(pt 1848 1176)
+)
+(connector
+	(pt 1120 1192)
+	(pt 1872 1192)
+)
+(connector
+	(pt 1120 1208)
+	(pt 1896 1208)
+)
+(connector
+	(pt 1872 1192)
+	(pt 1872 832)
+)
+(connector
+	(pt 2008 832)
+	(pt 1872 832)
+)
+(connector
+	(pt 2008 816)
+	(pt 1688 816)
+)
+(connector
+	(pt 1688 720)
+	(pt 1688 784)
+)
+(connector
+	(pt 1688 784)
+	(pt 1688 816)
+)
+(connector
+	(pt 1784 656)
+	(pt 1784 1128)
+)
+(connector
+	(pt 1784 656)
+	(pt 2008 656)
+)
+(connector
+	(pt 1808 672)
+	(pt 1808 1144)
+)
+(connector
+	(pt 1808 672)
+	(pt 2008 672)
+)
+(connector
+	(pt 1120 1160)
+	(pt 1824 1160)
+)
+(connector
+	(pt 1688 720)
+	(pt 2008 720)
+)
+(connector
+	(pt 1824 688)
+	(pt 1824 1160)
+)
+(connector
+	(pt 1824 688)
+	(pt 2008 688)
+)
+(connector
+	(pt 1768 1112)
+	(pt 1768 736)
+)
+(connector
+	(pt 1848 704)
+	(pt 1848 1176)
+)
+(connector
+	(pt 1848 704)
+	(pt 2008 704)
+)
+(connector
+	(pt 1768 736)
+	(pt 2008 736)
+)
+(connector
+	(pt 1896 752)
+	(pt 2008 752)
+)
+(connector
+	(pt 1896 752)
+	(pt 1896 1208)
+)
+(connector
+	(pt 1120 1224)
+	(pt 1912 1224)
+)
+(connector
+	(pt 1912 1224)
+	(pt 1912 768)
+)
+(connector
+	(pt 1912 768)
+	(pt 2008 768)
+)
+(connector
+	(pt 1120 1240)
+	(pt 1928 1240)
+)
+(connector
+	(pt 1928 1240)
+	(pt 1928 784)
+)
+(connector
+	(pt 1928 784)
+	(pt 2008 784)
+)
+(connector
+	(pt 1120 1256)
+	(pt 1944 1256)
+)
+(connector
+	(pt 1944 1256)
+	(pt 1944 800)
+)
+(connector
+	(pt 1944 800)
+	(pt 2008 800)
+)
 (junction (pt 680 400))
 (junction (pt 664 416))
 (junction (pt 648 432))
@@ -1597,14 +1869,4 @@ on the Quartus Prime software download page.
 (junction (pt 1952 416))
 (junction (pt 1944 432))
 (junction (pt 1912 448))
-(junction (pt 2008 672))
-(junction (pt 2008 688))
-(junction (pt 2008 704))
-(junction (pt 2008 720))
-(junction (pt 2008 736))
-(junction (pt 2008 752))
-(junction (pt 2008 768))
-(junction (pt 2008 784))
-(junction (pt 2008 800))
-(junction (pt 2008 816))
-(junction (pt 2008 832))
+(junction (pt 1688 784))

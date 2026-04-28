@@ -1,6 +1,6 @@
 Assembler report for SDprojeto
-Mon Apr 27 06:13:47 2026
-Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Tue Apr 28 09:58:26 2026
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/ijsn/Documents/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof
+  5. Assembler Device Options: C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof
   6. Assembler Messages
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Apr 27 06:13:47 2026 ;
+; Assembler Status      ; Successful - Tue Apr 28 09:58:26 2026 ;
 ; Revision Name         ; SDprojeto                             ;
-; Top-level Entity Name ; somador                               ;
+; Top-level Entity Name ; circuito_completo                     ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE6E22C6                           ;
 +-----------------------+---------------------------------------+
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                ;
-+------------------------------------------------------------------------------------------+
-; File Name                                                                                ;
-+------------------------------------------------------------------------------------------+
-; C:/Users/ijsn/Documents/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof ;
-+------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                          ;
++----------------------------------------------------------------------------------------------------+
+; File Name                                                                                          ;
++----------------------------------------------------------------------------------------------------+
+; C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof ;
++----------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/ijsn/Documents/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                           ;
-+----------------+---------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00098CD0                                                                                        ;
-; Checksum       ; 0x00098CD0                                                                                        ;
-+----------------+---------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/virx1/a principal/Junior/Sistemas-Digitais-Projeto-1/projetoSD/output_files/SDprojeto.sof ;
++----------------+-------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                     ;
++----------------+-------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0009C712                                                                                                  ;
+; Checksum       ; 0x0009C712                                                                                                  ;
++----------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,15 +77,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Mon Apr 27 06:13:46 2026
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Tue Apr 28 09:58:25 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SDprojeto -c SDprojeto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4741 megabytes
-    Info: Processing ended: Mon Apr 27 06:13:47 2026
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Tue Apr 28 09:58:26 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
